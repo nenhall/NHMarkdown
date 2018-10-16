@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		80AD2B402175766E00DC38EB /* NHEFCMark.h in Headers */ = {isa = PBXBuildFile; fileRef = 80AD2B3E2175766E00DC38EB /* NHEFCMark.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80AD2B992175771800DC38EB /* xml.c in Sources */ = {isa = PBXBuildFile; fileRef = 80AD2B5B2175771800DC38EB /* xml.c */; };
+		80AD2B9A2175771800DC38EB /* cmarkextensions_export.h in Headers */ = {isa = PBXBuildFile; fileRef = 80AD2B5C2175771800DC38EB /* cmarkextensions_export.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80AD2B9B2175771800DC38EB /* strikethrough.c in Sources */ = {isa = PBXBuildFile; fileRef = 80AD2B5D2175771800DC38EB /* strikethrough.c */; };
+		80AD2B9C2175771800DC38EB /* cmark.c in Sources */ = {isa = PBXBuildFile; fileRef = 80AD2B5E2175771800DC38EB /* cmark.c */; };
+		80AD2B9D2175771800DC38EB /* man.c in Sources */ = {isa = PBXBuildFile; fileRef = 80AD2B5F2175771800DC38EB /* man.c */; };
+		80AD2B9E2175771800DC38EB /* buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 80AD2B602175771800DC38EB /* buffer.c */; };
+		80AD2B9F2175771800DC38EB /* autolink.c in Sources */ = {isa = PBXBuildFile; fileRef = 80AD2B612175771800DC38EB /* autolink.c */; };
+		80AD2BA02175771800DC38EB /* blocks.c in Sources */ = {isa = PBXBuildFile; fileRef = 80AD2B622175771800DC38EB /* blocks.c */; };
+		80AD2BA12175771800DC38EB /* cmark_ctype.c in Sources */ = {isa = PBXBuildFile; fileRef = 80AD2B632175771800DC38EB /* cmark_ctype.c */; };
+		80AD2BA22175771800DC38EB /* cmark_export.h in Headers */ = {isa = PBXBuildFile; fileRef = 80AD2B642175771800DC38EB /* cmark_export.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80AD2BA32175771800DC38EB /* html.h in Headers */ = {isa = PBXBuildFile; fileRef = 80AD2B652175771800DC38EB /* html.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80AD2BA42175771800DC38EB /* table.c in Sources */ = {isa = PBXBuildFile; fileRef = 80AD2B662175771800DC38EB /* table.c */; };
+		80AD2BA52175771800DC38EB /* inlines.c in Sources */ = {isa = PBXBuildFile; fileRef = 80AD2B672175771800DC38EB /* inlines.c */; };
+		80AD2BA62175771800DC38EB /* plugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 80AD2B682175771800DC38EB /* plugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80AD2BA72175771800DC38EB /* latex.c in Sources */ = {isa = PBXBuildFile; fileRef = 80AD2B692175771800DC38EB /* latex.c */; };
+		80AD2BA82175771800DC38EB /* houdini_href_e.c in Sources */ = {isa = PBXBuildFile; fileRef = 80AD2B6A2175771800DC38EB /* houdini_href_e.c */; };
+		80AD2BA92175771800DC38EB /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 80AD2B6B2175771800DC38EB /* config.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80AD2BAA2175771800DC38EB /* chunk.h in Headers */ = {isa = PBXBuildFile; fileRef = 80AD2B6C2175771800DC38EB /* chunk.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80AD2BAB2175771800DC38EB /* syntax_extension.c in Sources */ = {isa = PBXBuildFile; fileRef = 80AD2B6D2175771800DC38EB /* syntax_extension.c */; };
+		80AD2BAC2175771800DC38EB /* case_fold_switch.inc in Sources */ = {isa = PBXBuildFile; fileRef = 80AD2B6E2175771800DC38EB /* case_fold_switch.inc */; };
+		80AD2BAD2175771800DC38EB /* entities.inc in Sources */ = {isa = PBXBuildFile; fileRef = 80AD2B6F2175771800DC38EB /* entities.inc */; };
+		80AD2BAE2175771800DC38EB /* ext_scanners.c in Sources */ = {isa = PBXBuildFile; fileRef = 80AD2B702175771800DC38EB /* ext_scanners.c */; };
+		80AD2BAF2175771800DC38EB /* parser.h in Headers */ = {isa = PBXBuildFile; fileRef = 80AD2B712175771800DC38EB /* parser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80AD2BB02175771800DC38EB /* tagfilter.c in Sources */ = {isa = PBXBuildFile; fileRef = 80AD2B722175771800DC38EB /* tagfilter.c */; };
+		80AD2BB12175771800DC38EB /* houdini_html_e.c in Sources */ = {isa = PBXBuildFile; fileRef = 80AD2B732175771800DC38EB /* houdini_html_e.c */; };
+		80AD2BB22175771800DC38EB /* cmark.h in Headers */ = {isa = PBXBuildFile; fileRef = 80AD2B752175771800DC38EB /* cmark.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80AD2BB32175771800DC38EB /* plaintext.c in Sources */ = {isa = PBXBuildFile; fileRef = 80AD2B762175771800DC38EB /* plaintext.c */; };
+		80AD2BB42175771800DC38EB /* scanners.h in Headers */ = {isa = PBXBuildFile; fileRef = 80AD2B772175771800DC38EB /* scanners.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80AD2BB52175771800DC38EB /* node.h in Headers */ = {isa = PBXBuildFile; fileRef = 80AD2B782175771800DC38EB /* node.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80AD2BB62175771800DC38EB /* utf8.c in Sources */ = {isa = PBXBuildFile; fileRef = 80AD2B792175771800DC38EB /* utf8.c */; };
+		80AD2BB72175771800DC38EB /* references.c in Sources */ = {isa = PBXBuildFile; fileRef = 80AD2B7A2175771800DC38EB /* references.c */; };
+		80AD2BB82175771800DC38EB /* render.c in Sources */ = {isa = PBXBuildFile; fileRef = 80AD2B7B2175771800DC38EB /* render.c */; };
+		80AD2BB92175771800DC38EB /* core-extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 80AD2B7C2175771800DC38EB /* core-extensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80AD2BBA2175771800DC38EB /* iterator.c in Sources */ = {isa = PBXBuildFile; fileRef = 80AD2B7D2175771800DC38EB /* iterator.c */; };
+		80AD2BBB2175771800DC38EB /* registry.h in Headers */ = {isa = PBXBuildFile; fileRef = 80AD2B7E2175771800DC38EB /* registry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80AD2BBC2175771800DC38EB /* arena.c in Sources */ = {isa = PBXBuildFile; fileRef = 80AD2B7F2175771800DC38EB /* arena.c */; };
+		80AD2BBD2175771800DC38EB /* cmark_version.h in Headers */ = {isa = PBXBuildFile; fileRef = 80AD2B802175771800DC38EB /* cmark_version.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80AD2BBE2175771800DC38EB /* autolink.h in Headers */ = {isa = PBXBuildFile; fileRef = 80AD2B812175771800DC38EB /* autolink.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80AD2BBF2175771800DC38EB /* cmark_ctype.h in Headers */ = {isa = PBXBuildFile; fileRef = 80AD2B822175771800DC38EB /* cmark_ctype.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80AD2BC02175771800DC38EB /* buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 80AD2B832175771800DC38EB /* buffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80AD2BC12175771800DC38EB /* strikethrough.h in Headers */ = {isa = PBXBuildFile; fileRef = 80AD2B842175771800DC38EB /* strikethrough.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80AD2BC22175771800DC38EB /* cmark_extension_api.h in Headers */ = {isa = PBXBuildFile; fileRef = 80AD2B852175771800DC38EB /* cmark_extension_api.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80AD2BC32175771800DC38EB /* linked_list.c in Sources */ = {isa = PBXBuildFile; fileRef = 80AD2B862175771800DC38EB /* linked_list.c */; };
+		80AD2BC42175771800DC38EB /* syntax_extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 80AD2B872175771800DC38EB /* syntax_extension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80AD2BC52175771800DC38EB /* commonmark.c in Sources */ = {isa = PBXBuildFile; fileRef = 80AD2B882175771800DC38EB /* commonmark.c */; };
+		80AD2BC62175771800DC38EB /* html.c in Sources */ = {isa = PBXBuildFile; fileRef = 80AD2B892175771800DC38EB /* html.c */; };
+		80AD2BC72175771800DC38EB /* plugin.c in Sources */ = {isa = PBXBuildFile; fileRef = 80AD2B8A2175771800DC38EB /* plugin.c */; };
+		80AD2BC82175771800DC38EB /* inlines.h in Headers */ = {isa = PBXBuildFile; fileRef = 80AD2B8B2175771800DC38EB /* inlines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80AD2BC92175771800DC38EB /* table.h in Headers */ = {isa = PBXBuildFile; fileRef = 80AD2B8C2175771800DC38EB /* table.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80AD2BCA2175771800DC38EB /* scanners.c in Sources */ = {isa = PBXBuildFile; fileRef = 80AD2B8D2175771800DC38EB /* scanners.c */; };
+		80AD2BCB2175771800DC38EB /* tagfilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 80AD2B8E2175771800DC38EB /* tagfilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80AD2BCC2175771800DC38EB /* ext_scanners.h in Headers */ = {isa = PBXBuildFile; fileRef = 80AD2B8F2175771800DC38EB /* ext_scanners.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80AD2BCD2175771800DC38EB /* houdini.h in Headers */ = {isa = PBXBuildFile; fileRef = 80AD2B902175771800DC38EB /* houdini.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80AD2BCE2175771800DC38EB /* iterator.h in Headers */ = {isa = PBXBuildFile; fileRef = 80AD2B912175771800DC38EB /* iterator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80AD2BCF2175771800DC38EB /* houdini_html_u.c in Sources */ = {isa = PBXBuildFile; fileRef = 80AD2B922175771800DC38EB /* houdini_html_u.c */; };
+		80AD2BD02175771800DC38EB /* registry.c in Sources */ = {isa = PBXBuildFile; fileRef = 80AD2B932175771800DC38EB /* registry.c */; };
+		80AD2BD12175771800DC38EB /* utf8.h in Headers */ = {isa = PBXBuildFile; fileRef = 80AD2B942175771800DC38EB /* utf8.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80AD2BD22175771800DC38EB /* node.c in Sources */ = {isa = PBXBuildFile; fileRef = 80AD2B952175771800DC38EB /* node.c */; };
+		80AD2BD32175771800DC38EB /* core-extensions.c in Sources */ = {isa = PBXBuildFile; fileRef = 80AD2B962175771800DC38EB /* core-extensions.c */; };
+		80AD2BD42175771800DC38EB /* references.h in Headers */ = {isa = PBXBuildFile; fileRef = 80AD2B972175771800DC38EB /* references.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80AD2BD52175771800DC38EB /* render.h in Headers */ = {isa = PBXBuildFile; fileRef = 80AD2B982175771800DC38EB /* render.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		80AD2B3B2175766E00DC38EB /* NHEFCMark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NHEFCMark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80AD2B3E2175766E00DC38EB /* NHEFCMark.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHEFCMark.h; sourceTree = "<group>"; };
+		80AD2B3F2175766E00DC38EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80AD2B5B2175771800DC38EB /* xml.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xml.c; sourceTree = "<group>"; };
+		80AD2B5C2175771800DC38EB /* cmarkextensions_export.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmarkextensions_export.h; sourceTree = "<group>"; };
+		80AD2B5D2175771800DC38EB /* strikethrough.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = strikethrough.c; sourceTree = "<group>"; };
+		80AD2B5E2175771800DC38EB /* cmark.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cmark.c; sourceTree = "<group>"; };
+		80AD2B5F2175771800DC38EB /* man.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = man.c; sourceTree = "<group>"; };
+		80AD2B602175771800DC38EB /* buffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = buffer.c; sourceTree = "<group>"; };
+		80AD2B612175771800DC38EB /* autolink.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = autolink.c; sourceTree = "<group>"; };
+		80AD2B622175771800DC38EB /* blocks.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = blocks.c; sourceTree = "<group>"; };
+		80AD2B632175771800DC38EB /* cmark_ctype.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cmark_ctype.c; sourceTree = "<group>"; };
+		80AD2B642175771800DC38EB /* cmark_export.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmark_export.h; sourceTree = "<group>"; };
+		80AD2B652175771800DC38EB /* html.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = html.h; sourceTree = "<group>"; };
+		80AD2B662175771800DC38EB /* table.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = table.c; sourceTree = "<group>"; };
+		80AD2B672175771800DC38EB /* inlines.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = inlines.c; sourceTree = "<group>"; };
+		80AD2B682175771800DC38EB /* plugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = plugin.h; sourceTree = "<group>"; };
+		80AD2B692175771800DC38EB /* latex.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = latex.c; sourceTree = "<group>"; };
+		80AD2B6A2175771800DC38EB /* houdini_href_e.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = houdini_href_e.c; sourceTree = "<group>"; };
+		80AD2B6B2175771800DC38EB /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		80AD2B6C2175771800DC38EB /* chunk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chunk.h; sourceTree = "<group>"; };
+		80AD2B6D2175771800DC38EB /* syntax_extension.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = syntax_extension.c; sourceTree = "<group>"; };
+		80AD2B6E2175771800DC38EB /* case_fold_switch.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = case_fold_switch.inc; sourceTree = "<group>"; };
+		80AD2B6F2175771800DC38EB /* entities.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = entities.inc; sourceTree = "<group>"; };
+		80AD2B702175771800DC38EB /* ext_scanners.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ext_scanners.c; sourceTree = "<group>"; };
+		80AD2B712175771800DC38EB /* parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parser.h; sourceTree = "<group>"; };
+		80AD2B722175771800DC38EB /* tagfilter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tagfilter.c; sourceTree = "<group>"; };
+		80AD2B732175771800DC38EB /* houdini_html_e.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = houdini_html_e.c; sourceTree = "<group>"; };
+		80AD2B752175771800DC38EB /* cmark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmark.h; sourceTree = "<group>"; };
+		80AD2B762175771800DC38EB /* plaintext.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = plaintext.c; sourceTree = "<group>"; };
+		80AD2B772175771800DC38EB /* scanners.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scanners.h; sourceTree = "<group>"; };
+		80AD2B782175771800DC38EB /* node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = node.h; sourceTree = "<group>"; };
+		80AD2B792175771800DC38EB /* utf8.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = utf8.c; sourceTree = "<group>"; };
+		80AD2B7A2175771800DC38EB /* references.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = references.c; sourceTree = "<group>"; };
+		80AD2B7B2175771800DC38EB /* render.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = render.c; sourceTree = "<group>"; };
+		80AD2B7C2175771800DC38EB /* core-extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "core-extensions.h"; sourceTree = "<group>"; };
+		80AD2B7D2175771800DC38EB /* iterator.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = iterator.c; sourceTree = "<group>"; };
+		80AD2B7E2175771800DC38EB /* registry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = registry.h; sourceTree = "<group>"; };
+		80AD2B7F2175771800DC38EB /* arena.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = arena.c; sourceTree = "<group>"; };
+		80AD2B802175771800DC38EB /* cmark_version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmark_version.h; sourceTree = "<group>"; };
+		80AD2B812175771800DC38EB /* autolink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autolink.h; sourceTree = "<group>"; };
+		80AD2B822175771800DC38EB /* cmark_ctype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmark_ctype.h; sourceTree = "<group>"; };
+		80AD2B832175771800DC38EB /* buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buffer.h; sourceTree = "<group>"; };
+		80AD2B842175771800DC38EB /* strikethrough.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = strikethrough.h; sourceTree = "<group>"; };
+		80AD2B852175771800DC38EB /* cmark_extension_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmark_extension_api.h; sourceTree = "<group>"; };
+		80AD2B862175771800DC38EB /* linked_list.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = linked_list.c; sourceTree = "<group>"; };
+		80AD2B872175771800DC38EB /* syntax_extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = syntax_extension.h; sourceTree = "<group>"; };
+		80AD2B882175771800DC38EB /* commonmark.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = commonmark.c; sourceTree = "<group>"; };
+		80AD2B892175771800DC38EB /* html.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = html.c; sourceTree = "<group>"; };
+		80AD2B8A2175771800DC38EB /* plugin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = plugin.c; sourceTree = "<group>"; };
+		80AD2B8B2175771800DC38EB /* inlines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inlines.h; sourceTree = "<group>"; };
+		80AD2B8C2175771800DC38EB /* table.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = table.h; sourceTree = "<group>"; };
+		80AD2B8D2175771800DC38EB /* scanners.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = scanners.c; sourceTree = "<group>"; };
+		80AD2B8E2175771800DC38EB /* tagfilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tagfilter.h; sourceTree = "<group>"; };
+		80AD2B8F2175771800DC38EB /* ext_scanners.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ext_scanners.h; sourceTree = "<group>"; };
+		80AD2B902175771800DC38EB /* houdini.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = houdini.h; sourceTree = "<group>"; };
+		80AD2B912175771800DC38EB /* iterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iterator.h; sourceTree = "<group>"; };
+		80AD2B922175771800DC38EB /* houdini_html_u.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = houdini_html_u.c; sourceTree = "<group>"; };
+		80AD2B932175771800DC38EB /* registry.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = registry.c; sourceTree = "<group>"; };
+		80AD2B942175771800DC38EB /* utf8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utf8.h; sourceTree = "<group>"; };
+		80AD2B952175771800DC38EB /* node.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = node.c; sourceTree = "<group>"; };
+		80AD2B962175771800DC38EB /* core-extensions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "core-extensions.c"; sourceTree = "<group>"; };
+		80AD2B972175771800DC38EB /* references.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = references.h; sourceTree = "<group>"; };
+		80AD2B982175771800DC38EB /* render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = render.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		80AD2B382175766E00DC38EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		80AD2B312175766E00DC38EB = {
+			isa = PBXGroup;
+			children = (
+				80AD2B3D2175766E00DC38EB /* NHEFCMark */,
+				80AD2B3C2175766E00DC38EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		80AD2B3C2175766E00DC38EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80AD2B3B2175766E00DC38EB /* NHEFCMark.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80AD2B3D2175766E00DC38EB /* NHEFCMark */ = {
+			isa = PBXGroup;
+			children = (
+				80AD2B582175771800DC38EB /* EFCMark */,
+				80AD2B3E2175766E00DC38EB /* NHEFCMark.h */,
+				80AD2B3F2175766E00DC38EB /* Info.plist */,
+			);
+			path = NHEFCMark;
+			sourceTree = "<group>";
+		};
+		80AD2B582175771800DC38EB /* EFCMark */ = {
+			isa = PBXGroup;
+			children = (
+				80AD2B592175771800DC38EB /* Classes */,
+			);
+			path = EFCMark;
+			sourceTree = "<group>";
+		};
+		80AD2B592175771800DC38EB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				80AD2B5A2175771800DC38EB /* cmark */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		80AD2B5A2175771800DC38EB /* cmark */ = {
+			isa = PBXGroup;
+			children = (
+				80AD2B5B2175771800DC38EB /* xml.c */,
+				80AD2B5C2175771800DC38EB /* cmarkextensions_export.h */,
+				80AD2B5D2175771800DC38EB /* strikethrough.c */,
+				80AD2B5E2175771800DC38EB /* cmark.c */,
+				80AD2B5F2175771800DC38EB /* man.c */,
+				80AD2B602175771800DC38EB /* buffer.c */,
+				80AD2B612175771800DC38EB /* autolink.c */,
+				80AD2B622175771800DC38EB /* blocks.c */,
+				80AD2B632175771800DC38EB /* cmark_ctype.c */,
+				80AD2B642175771800DC38EB /* cmark_export.h */,
+				80AD2B652175771800DC38EB /* html.h */,
+				80AD2B662175771800DC38EB /* table.c */,
+				80AD2B672175771800DC38EB /* inlines.c */,
+				80AD2B682175771800DC38EB /* plugin.h */,
+				80AD2B692175771800DC38EB /* latex.c */,
+				80AD2B6A2175771800DC38EB /* houdini_href_e.c */,
+				80AD2B6B2175771800DC38EB /* config.h */,
+				80AD2B6C2175771800DC38EB /* chunk.h */,
+				80AD2B6D2175771800DC38EB /* syntax_extension.c */,
+				80AD2B6E2175771800DC38EB /* case_fold_switch.inc */,
+				80AD2B6F2175771800DC38EB /* entities.inc */,
+				80AD2B702175771800DC38EB /* ext_scanners.c */,
+				80AD2B712175771800DC38EB /* parser.h */,
+				80AD2B722175771800DC38EB /* tagfilter.c */,
+				80AD2B732175771800DC38EB /* houdini_html_e.c */,
+				80AD2B742175771800DC38EB /* include */,
+				80AD2B762175771800DC38EB /* plaintext.c */,
+				80AD2B772175771800DC38EB /* scanners.h */,
+				80AD2B782175771800DC38EB /* node.h */,
+				80AD2B792175771800DC38EB /* utf8.c */,
+				80AD2B7A2175771800DC38EB /* references.c */,
+				80AD2B7B2175771800DC38EB /* render.c */,
+				80AD2B7C2175771800DC38EB /* core-extensions.h */,
+				80AD2B7D2175771800DC38EB /* iterator.c */,
+				80AD2B7E2175771800DC38EB /* registry.h */,
+				80AD2B7F2175771800DC38EB /* arena.c */,
+				80AD2B802175771800DC38EB /* cmark_version.h */,
+				80AD2B812175771800DC38EB /* autolink.h */,
+				80AD2B822175771800DC38EB /* cmark_ctype.h */,
+				80AD2B832175771800DC38EB /* buffer.h */,
+				80AD2B842175771800DC38EB /* strikethrough.h */,
+				80AD2B852175771800DC38EB /* cmark_extension_api.h */,
+				80AD2B862175771800DC38EB /* linked_list.c */,
+				80AD2B872175771800DC38EB /* syntax_extension.h */,
+				80AD2B882175771800DC38EB /* commonmark.c */,
+				80AD2B892175771800DC38EB /* html.c */,
+				80AD2B8A2175771800DC38EB /* plugin.c */,
+				80AD2B8B2175771800DC38EB /* inlines.h */,
+				80AD2B8C2175771800DC38EB /* table.h */,
+				80AD2B8D2175771800DC38EB /* scanners.c */,
+				80AD2B8E2175771800DC38EB /* tagfilter.h */,
+				80AD2B8F2175771800DC38EB /* ext_scanners.h */,
+				80AD2B902175771800DC38EB /* houdini.h */,
+				80AD2B912175771800DC38EB /* iterator.h */,
+				80AD2B922175771800DC38EB /* houdini_html_u.c */,
+				80AD2B932175771800DC38EB /* registry.c */,
+				80AD2B942175771800DC38EB /* utf8.h */,
+				80AD2B952175771800DC38EB /* node.c */,
+				80AD2B962175771800DC38EB /* core-extensions.c */,
+				80AD2B972175771800DC38EB /* references.h */,
+				80AD2B982175771800DC38EB /* render.h */,
+			);
+			path = cmark;
+			sourceTree = "<group>";
+		};
+		80AD2B742175771800DC38EB /* include */ = {
+			isa = PBXGroup;
+			children = (
+				80AD2B752175771800DC38EB /* cmark.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		80AD2B362175766E00DC38EB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80AD2BB22175771800DC38EB /* cmark.h in Headers */,
+				80AD2BCC2175771800DC38EB /* ext_scanners.h in Headers */,
+				80AD2BA62175771800DC38EB /* plugin.h in Headers */,
+				80AD2BA22175771800DC38EB /* cmark_export.h in Headers */,
+				80AD2BD42175771800DC38EB /* references.h in Headers */,
+				80AD2BA92175771800DC38EB /* config.h in Headers */,
+				80AD2BAF2175771800DC38EB /* parser.h in Headers */,
+				80AD2BBF2175771800DC38EB /* cmark_ctype.h in Headers */,
+				80AD2BB92175771800DC38EB /* core-extensions.h in Headers */,
+				80AD2BC92175771800DC38EB /* table.h in Headers */,
+				80AD2BCB2175771800DC38EB /* tagfilter.h in Headers */,
+				80AD2BCD2175771800DC38EB /* houdini.h in Headers */,
+				80AD2BBE2175771800DC38EB /* autolink.h in Headers */,
+				80AD2BA32175771800DC38EB /* html.h in Headers */,
+				80AD2BB52175771800DC38EB /* node.h in Headers */,
+				80AD2BD52175771800DC38EB /* render.h in Headers */,
+				80AD2BC12175771800DC38EB /* strikethrough.h in Headers */,
+				80AD2BC42175771800DC38EB /* syntax_extension.h in Headers */,
+				80AD2BBD2175771800DC38EB /* cmark_version.h in Headers */,
+				80AD2BC22175771800DC38EB /* cmark_extension_api.h in Headers */,
+				80AD2BC82175771800DC38EB /* inlines.h in Headers */,
+				80AD2B402175766E00DC38EB /* NHEFCMark.h in Headers */,
+				80AD2BCE2175771800DC38EB /* iterator.h in Headers */,
+				80AD2BBB2175771800DC38EB /* registry.h in Headers */,
+				80AD2BB42175771800DC38EB /* scanners.h in Headers */,
+				80AD2BC02175771800DC38EB /* buffer.h in Headers */,
+				80AD2B9A2175771800DC38EB /* cmarkextensions_export.h in Headers */,
+				80AD2BD12175771800DC38EB /* utf8.h in Headers */,
+				80AD2BAA2175771800DC38EB /* chunk.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		80AD2B3A2175766E00DC38EB /* NHEFCMark */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80AD2B432175766E00DC38EB /* Build configuration list for PBXNativeTarget "NHEFCMark" */;
+			buildPhases = (
+				80AD2B362175766E00DC38EB /* Headers */,
+				80AD2B372175766E00DC38EB /* Sources */,
+				80AD2B382175766E00DC38EB /* Frameworks */,
+				80AD2B392175766E00DC38EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NHEFCMark;
+			productName = NHEFCMark;
+			productReference = 80AD2B3B2175766E00DC38EB /* NHEFCMark.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		80AD2B322175766E00DC38EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = nenhall_studio;
+				TargetAttributes = {
+					80AD2B3A2175766E00DC38EB = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 80AD2B352175766E00DC38EB /* Build configuration list for PBXProject "NHEFCMark" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 80AD2B312175766E00DC38EB;
+			productRefGroup = 80AD2B3C2175766E00DC38EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				80AD2B3A2175766E00DC38EB /* NHEFCMark */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		80AD2B392175766E00DC38EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		80AD2B372175766E00DC38EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80AD2BA12175771800DC38EB /* cmark_ctype.c in Sources */,
+				80AD2BA02175771800DC38EB /* blocks.c in Sources */,
+				80AD2B9C2175771800DC38EB /* cmark.c in Sources */,
+				80AD2BA72175771800DC38EB /* latex.c in Sources */,
+				80AD2BD02175771800DC38EB /* registry.c in Sources */,
+				80AD2BC72175771800DC38EB /* plugin.c in Sources */,
+				80AD2BA42175771800DC38EB /* table.c in Sources */,
+				80AD2BB12175771800DC38EB /* houdini_html_e.c in Sources */,
+				80AD2BA82175771800DC38EB /* houdini_href_e.c in Sources */,
+				80AD2BB82175771800DC38EB /* render.c in Sources */,
+				80AD2B992175771800DC38EB /* xml.c in Sources */,
+				80AD2BAC2175771800DC38EB /* case_fold_switch.inc in Sources */,
+				80AD2BB02175771800DC38EB /* tagfilter.c in Sources */,
+				80AD2BCA2175771800DC38EB /* scanners.c in Sources */,
+				80AD2BD32175771800DC38EB /* core-extensions.c in Sources */,
+				80AD2BC62175771800DC38EB /* html.c in Sources */,
+				80AD2BB62175771800DC38EB /* utf8.c in Sources */,
+				80AD2BAB2175771800DC38EB /* syntax_extension.c in Sources */,
+				80AD2BC52175771800DC38EB /* commonmark.c in Sources */,
+				80AD2B9F2175771800DC38EB /* autolink.c in Sources */,
+				80AD2BBA2175771800DC38EB /* iterator.c in Sources */,
+				80AD2BCF2175771800DC38EB /* houdini_html_u.c in Sources */,
+				80AD2BBC2175771800DC38EB /* arena.c in Sources */,
+				80AD2BA52175771800DC38EB /* inlines.c in Sources */,
+				80AD2B9D2175771800DC38EB /* man.c in Sources */,
+				80AD2BB72175771800DC38EB /* references.c in Sources */,
+				80AD2BAE2175771800DC38EB /* ext_scanners.c in Sources */,
+				80AD2BAD2175771800DC38EB /* entities.inc in Sources */,
+				80AD2BC32175771800DC38EB /* linked_list.c in Sources */,
+				80AD2B9E2175771800DC38EB /* buffer.c in Sources */,
+				80AD2BD22175771800DC38EB /* node.c in Sources */,
+				80AD2B9B2175771800DC38EB /* strikethrough.c in Sources */,
+				80AD2BB32175771800DC38EB /* plaintext.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		80AD2B412175766E00DC38EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		80AD2B422175766E00DC38EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		80AD2B442175766E00DC38EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 69U78V53ZN;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = NHEFCMark/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nenhall.NHEFCMark;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		80AD2B452175766E00DC38EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 69U78V53ZN;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = NHEFCMark/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nenhall.NHEFCMark;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		80AD2B352175766E00DC38EB /* Build configuration list for PBXProject "NHEFCMark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80AD2B412175766E00DC38EB /* Debug */,
+				80AD2B422175766E00DC38EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80AD2B432175766E00DC38EB /* Build configuration list for PBXNativeTarget "NHEFCMark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80AD2B442175766E00DC38EB /* Debug */,
+				80AD2B452175766E00DC38EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 80AD2B322175766E00DC38EB /* Project object */;
+}
