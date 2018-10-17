@@ -152,3 +152,9 @@ sample1|sample2|sample3
 
 
 
+此版本是基于**EFMarkdownr**及**EFCMark**的基础上修改的，因为EFMarkdownr没有Objective-C版本，EFCMark没有swift版本；
+
+感谢[EyreFree](https://github.com/EyreFree)/EFMarkdownr、[EFCMark](https://github.com/EyreFree/EFCMark)的支持
+
+
+
