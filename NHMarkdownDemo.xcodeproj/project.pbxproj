@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		806DC7ED2176CD0600742CE5 /* NHEFCMark.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 80AD2C2921758C7800DC38EB /* NHEFCMark.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		806DC7EE2176CD0B00742CE5 /* NHMarkdown.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 80AD2B51217576E400DC38EB /* NHMarkdown.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		806DC7F02176CE0E00742CE5 /* 穿越318线川藏游记.md in Resources */ = {isa = PBXBuildFile; fileRef = 806DC7EF2176CE0E00742CE5 /* 穿越318线川藏游记.md */; };
+		80A531502175C87D0045C44A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A5314F2175C87D0045C44A /* AppDelegate.swift */; };
+		80A531522175C87D0045C44A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A531512175C87D0045C44A /* ViewController.swift */; };
+		80A531552175C87D0045C44A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A531532175C87D0045C44A /* Main.storyboard */; };
+		80A531572175C8800045C44A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80A531562175C8800045C44A /* Assets.xcassets */; };
+		80A5315A2175C8800045C44A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A531582175C8800045C44A /* LaunchScreen.storyboard */; };
+		80A531652175C8800045C44A /* NHMarkdownSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A531642175C8800045C44A /* NHMarkdownSwiftTests.swift */; };
+		80A531702175C8800045C44A /* NHMarkdownSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A5316F2175C8800045C44A /* NHMarkdownSwiftUITests.swift */; };
+		80A531812175CFC80045C44A /* NHMarkdown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80AD2B51217576E400DC38EB /* NHMarkdown.framework */; };
+		80A531822175CFCC0045C44A /* NHEFCMark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80AD2C2921758C7800DC38EB /* NHEFCMark.framework */; };
 		80AD2A4C2175747600DC38EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80AD2A4B2175747600DC38EB /* AppDelegate.m */; };
 		80AD2A4F2175747600DC38EB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80AD2A4E2175747600DC38EB /* ViewController.m */; };
 		80AD2A522175747600DC38EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80AD2A502175747600DC38EB /* Main.storyboard */; };
@@ -22,6 +34,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		80A531612175C8800045C44A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80AD2A3F2175747600DC38EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80A5314C2175C87C0045C44A;
+			remoteInfo = NHMarkdownSwift;
+		};
+		80A5316C2175C8800045C44A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80AD2A3F2175747600DC38EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80A5314C2175C87C0045C44A;
+			remoteInfo = NHMarkdownSwift;
+		};
+		80A5317C2175CFBC0045C44A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80AD2C2421758C7800DC38EB /* NHEFCMark.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 80AD2B3A2175766E00DC38EB;
+			remoteInfo = NHEFCMark;
+		};
+		80A5317E2175CFC10045C44A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80AD2B4C217576E400DC38EB /* NHMarkdown.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 80AD2A852175751F00DC38EB;
+			remoteInfo = NHMarkdown;
+		};
 		80AD2A602175747A00DC38EB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 80AD2A3F2175747600DC38EB /* Project object */;
@@ -60,6 +100,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		806DC7EC2176CCFD00742CE5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				806DC7EE2176CD0B00742CE5 /* NHMarkdown.framework in CopyFiles */,
+				806DC7ED2176CD0600742CE5 /* NHEFCMark.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		80AD2BE121757DAA00DC38EB /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 12;
@@ -74,6 +125,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		806DC7EF2176CE0E00742CE5 /* 穿越318线川藏游记.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = "穿越318线川藏游记.md"; path = "NHMarkdownDemo/穿越318线川藏游记.md"; sourceTree = SOURCE_ROOT; };
+		80A5314D2175C87C0045C44A /* NHMarkdownSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NHMarkdownSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80A5314F2175C87D0045C44A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		80A531512175C87D0045C44A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		80A531542175C87D0045C44A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		80A531562175C8800045C44A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		80A531592175C8800045C44A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		80A5315B2175C8800045C44A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80A531602175C8800045C44A /* NHMarkdownSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NHMarkdownSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		80A531642175C8800045C44A /* NHMarkdownSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NHMarkdownSwiftTests.swift; sourceTree = "<group>"; };
+		80A531662175C8800045C44A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80A5316B2175C8800045C44A /* NHMarkdownSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NHMarkdownSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		80A5316F2175C8800045C44A /* NHMarkdownSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NHMarkdownSwiftUITests.swift; sourceTree = "<group>"; };
+		80A531712175C8800045C44A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80AD2A472175747600DC38EB /* NHMarkdownDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NHMarkdownDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80AD2A4A2175747600DC38EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		80AD2A4B2175747600DC38EB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -98,6 +163,29 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		80A5314A2175C87C0045C44A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80A531822175CFCC0045C44A /* NHEFCMark.framework in Frameworks */,
+				80A531812175CFC80045C44A /* NHMarkdown.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80A5315D2175C8800045C44A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80A531682175C8800045C44A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		80AD2A442175747600DC38EB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -122,6 +210,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		80A5314E2175C87D0045C44A /* NHMarkdownSwift */ = {
+			isa = PBXGroup;
+			children = (
+				80A5314F2175C87D0045C44A /* AppDelegate.swift */,
+				80A531512175C87D0045C44A /* ViewController.swift */,
+				806DC7EF2176CE0E00742CE5 /* 穿越318线川藏游记.md */,
+				80A531532175C87D0045C44A /* Main.storyboard */,
+				80A531562175C8800045C44A /* Assets.xcassets */,
+				80A531582175C8800045C44A /* LaunchScreen.storyboard */,
+				80A5315B2175C8800045C44A /* Info.plist */,
+			);
+			path = NHMarkdownSwift;
+			sourceTree = "<group>";
+		};
+		80A531632175C8800045C44A /* NHMarkdownSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				80A531642175C8800045C44A /* NHMarkdownSwiftTests.swift */,
+				80A531662175C8800045C44A /* Info.plist */,
+			);
+			path = NHMarkdownSwiftTests;
+			sourceTree = "<group>";
+		};
+		80A5316E2175C8800045C44A /* NHMarkdownSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				80A5316F2175C8800045C44A /* NHMarkdownSwiftUITests.swift */,
+				80A531712175C8800045C44A /* Info.plist */,
+			);
+			path = NHMarkdownSwiftUITests;
+			sourceTree = "<group>";
+		};
+		80A531802175CFC80045C44A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		80AD2A3E2175747600DC38EB = {
 			isa = PBXGroup;
 			children = (
@@ -130,7 +257,11 @@
 				80AD2A492175747600DC38EB /* NHMarkdownDemo */,
 				80AD2A622175747A00DC38EB /* NHMarkdownDemoTests */,
 				80AD2A6D2175747A00DC38EB /* NHMarkdownDemoUITests */,
+				80A5314E2175C87D0045C44A /* NHMarkdownSwift */,
+				80A531632175C8800045C44A /* NHMarkdownSwiftTests */,
+				80A5316E2175C8800045C44A /* NHMarkdownSwiftUITests */,
 				80AD2A482175747600DC38EB /* Products */,
+				80A531802175CFC80045C44A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +271,9 @@
 				80AD2A472175747600DC38EB /* NHMarkdownDemo.app */,
 				80AD2A5F2175747A00DC38EB /* NHMarkdownDemoTests.xctest */,
 				80AD2A6A2175747A00DC38EB /* NHMarkdownDemoUITests.xctest */,
+				80A5314D2175C87C0045C44A /* NHMarkdownSwift.app */,
+				80A531602175C8800045C44A /* NHMarkdownSwiftTests.xctest */,
+				80A5316B2175C8800045C44A /* NHMarkdownSwiftUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -200,6 +334,62 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		80A5314C2175C87C0045C44A /* NHMarkdownSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80A531792175C8800045C44A /* Build configuration list for PBXNativeTarget "NHMarkdownSwift" */;
+			buildPhases = (
+				80A531492175C87C0045C44A /* Sources */,
+				80A5314A2175C87C0045C44A /* Frameworks */,
+				80A5314B2175C87C0045C44A /* Resources */,
+				806DC7EC2176CCFD00742CE5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80A5317F2175CFC10045C44A /* PBXTargetDependency */,
+				80A5317D2175CFBC0045C44A /* PBXTargetDependency */,
+			);
+			name = NHMarkdownSwift;
+			productName = NHMarkdownSwift;
+			productReference = 80A5314D2175C87C0045C44A /* NHMarkdownSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		80A5315F2175C8800045C44A /* NHMarkdownSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80A5317A2175C8800045C44A /* Build configuration list for PBXNativeTarget "NHMarkdownSwiftTests" */;
+			buildPhases = (
+				80A5315C2175C8800045C44A /* Sources */,
+				80A5315D2175C8800045C44A /* Frameworks */,
+				80A5315E2175C8800045C44A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80A531622175C8800045C44A /* PBXTargetDependency */,
+			);
+			name = NHMarkdownSwiftTests;
+			productName = NHMarkdownSwiftTests;
+			productReference = 80A531602175C8800045C44A /* NHMarkdownSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		80A5316A2175C8800045C44A /* NHMarkdownSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80A5317B2175C8800045C44A /* Build configuration list for PBXNativeTarget "NHMarkdownSwiftUITests" */;
+			buildPhases = (
+				80A531672175C8800045C44A /* Sources */,
+				80A531682175C8800045C44A /* Frameworks */,
+				80A531692175C8800045C44A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80A5316D2175C8800045C44A /* PBXTargetDependency */,
+			);
+			name = NHMarkdownSwiftUITests;
+			productName = NHMarkdownSwiftUITests;
+			productReference = 80A5316B2175C8800045C44A /* NHMarkdownSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		80AD2A462175747600DC38EB /* NHMarkdownDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 80AD2A732175747A00DC38EB /* Build configuration list for PBXNativeTarget "NHMarkdownDemo" */;
@@ -261,9 +451,21 @@
 		80AD2A3F2175747600DC38EB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = nenhall_studio;
 				TargetAttributes = {
+					80A5314C2175C87C0045C44A = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					80A5315F2175C8800045C44A = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 80A5314C2175C87C0045C44A;
+					};
+					80A5316A2175C8800045C44A = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 80A5314C2175C87C0045C44A;
+					};
 					80AD2A462175747600DC38EB = {
 						CreatedOnToolsVersion = 10.0;
 						LastSwiftMigration = 1000;
@@ -304,6 +506,9 @@
 				80AD2A462175747600DC38EB /* NHMarkdownDemo */,
 				80AD2A5E2175747A00DC38EB /* NHMarkdownDemoTests */,
 				80AD2A692175747A00DC38EB /* NHMarkdownDemoUITests */,
+				80A5314C2175C87C0045C44A /* NHMarkdownSwift */,
+				80A5315F2175C8800045C44A /* NHMarkdownSwiftTests */,
+				80A5316A2175C8800045C44A /* NHMarkdownSwiftUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -326,6 +531,31 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
+		80A5314B2175C87C0045C44A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				806DC7F02176CE0E00742CE5 /* 穿越318线川藏游记.md in Resources */,
+				80A5315A2175C8800045C44A /* LaunchScreen.storyboard in Resources */,
+				80A531572175C8800045C44A /* Assets.xcassets in Resources */,
+				80A531552175C87D0045C44A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80A5315E2175C8800045C44A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80A531692175C8800045C44A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		80AD2A452175747600DC38EB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -354,6 +584,31 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		80A531492175C87C0045C44A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80A531522175C87D0045C44A /* ViewController.swift in Sources */,
+				80A531502175C87D0045C44A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80A5315C2175C8800045C44A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80A531652175C8800045C44A /* NHMarkdownSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80A531672175C8800045C44A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80A531702175C8800045C44A /* NHMarkdownSwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		80AD2A432175747600DC38EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -384,6 +639,26 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		80A531622175C8800045C44A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80A5314C2175C87C0045C44A /* NHMarkdownSwift */;
+			targetProxy = 80A531612175C8800045C44A /* PBXContainerItemProxy */;
+		};
+		80A5316D2175C8800045C44A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80A5314C2175C87C0045C44A /* NHMarkdownSwift */;
+			targetProxy = 80A5316C2175C8800045C44A /* PBXContainerItemProxy */;
+		};
+		80A5317D2175CFBC0045C44A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NHEFCMark;
+			targetProxy = 80A5317C2175CFBC0045C44A /* PBXContainerItemProxy */;
+		};
+		80A5317F2175CFC10045C44A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NHMarkdown;
+			targetProxy = 80A5317E2175CFC10045C44A /* PBXContainerItemProxy */;
+		};
 		80AD2A612175747A00DC38EB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 80AD2A462175747600DC38EB /* NHMarkdownDemo */;
@@ -402,6 +677,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		80A531532175C87D0045C44A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80A531542175C87D0045C44A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		80A531582175C8800045C44A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80A531592175C8800045C44A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		80AD2A502175747600DC38EB /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -421,6 +712,138 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		80A531722175C8800045C44A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69U78V53ZN;
+				INFOPLIST_FILE = NHMarkdownSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nenhall.NHMarkdownSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		80A531732175C8800045C44A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69U78V53ZN;
+				INFOPLIST_FILE = NHMarkdownSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nenhall.NHMarkdownSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		80A531742175C8800045C44A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69U78V53ZN;
+				INFOPLIST_FILE = NHMarkdownSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nenhall.NHMarkdownSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NHMarkdownSwift.app/NHMarkdownSwift";
+			};
+			name = Debug;
+		};
+		80A531752175C8800045C44A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69U78V53ZN;
+				INFOPLIST_FILE = NHMarkdownSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nenhall.NHMarkdownSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NHMarkdownSwift.app/NHMarkdownSwift";
+			};
+			name = Release;
+		};
+		80A531762175C8800045C44A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69U78V53ZN;
+				INFOPLIST_FILE = NHMarkdownSwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nenhall.NHMarkdownSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NHMarkdownSwift;
+			};
+			name = Debug;
+		};
+		80A531772175C8800045C44A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69U78V53ZN;
+				INFOPLIST_FILE = NHMarkdownSwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nenhall.NHMarkdownSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NHMarkdownSwift;
+			};
+			name = Release;
+		};
 		80AD2A712175747A00DC38EB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -663,6 +1086,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		80A531792175C8800045C44A /* Build configuration list for PBXNativeTarget "NHMarkdownSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80A531722175C8800045C44A /* Debug */,
+				80A531732175C8800045C44A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80A5317A2175C8800045C44A /* Build configuration list for PBXNativeTarget "NHMarkdownSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80A531742175C8800045C44A /* Debug */,
+				80A531752175C8800045C44A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80A5317B2175C8800045C44A /* Build configuration list for PBXNativeTarget "NHMarkdownSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80A531762175C8800045C44A /* Debug */,
+				80A531772175C8800045C44A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		80AD2A422175747600DC38EB /* Build configuration list for PBXProject "NHMarkdownDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		80AD2A8B2175751F00DC38EB /* NHMarkdown.h in Headers */ = {isa = PBXBuildFile; fileRef = 80AD2A892175751F00DC38EB /* NHMarkdown.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		80AD2B28217575A800DC38EB /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AD2B1E217575A800DC38EB /* Global.swift */; };
 		80AD2B29217575A800DC38EB /* EFMarkdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AD2B1F217575A800DC38EB /* EFMarkdownView.swift */; };
 		80AD2B2A217575A800DC38EB /* EFMarkdown+Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AD2B20217575A800DC38EB /* EFMarkdown+Table.swift */; };
@@ -51,7 +50,6 @@
 
 /* Begin PBXFileReference section */
 		80AD2A862175751F00DC38EB /* NHMarkdown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NHMarkdown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		80AD2A892175751F00DC38EB /* NHMarkdown.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NHMarkdown.h; sourceTree = "<group>"; };
 		80AD2A8A2175751F00DC38EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80AD2B1E217575A800DC38EB /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		80AD2B1F217575A800DC38EB /* EFMarkdownView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EFMarkdownView.swift; sourceTree = "<group>"; };
@@ -99,7 +97,6 @@
 			children = (
 				80AD2B1C217575A800DC38EB /* EFMarkdown */,
 				80AD2BD8217577C100DC38EB /* NHMarkdown.swift */,
-				80AD2A892175751F00DC38EB /* NHMarkdown.h */,
 				80AD2A8A2175751F00DC38EB /* Info.plist */,
 			);
 			path = NHMarkdown;
@@ -152,7 +149,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80AD2A8B2175751F00DC38EB /* NHMarkdown.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

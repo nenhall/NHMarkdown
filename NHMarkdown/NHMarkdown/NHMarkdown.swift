@@ -12,12 +12,15 @@ import WebKit
 
 @objc public class NHMarkdown: EFMarkdown {
     
+    /// markdown 转换成 html
+    ///
+    /// - Parameter markdown: markdown原文
+    /// - Returns: html
     @objc public func markdownToHTML(_ markdown: String) -> String {
-//        return markdownToHTML(markdown, options: .safe)
         var html : String?
         do {
-            html = try EFMarkdown().markdownToHTML(markdown, options: .safe)
-            
+            html = try markdownToHTML(markdown, options: .safe)
+
         } catch let error as NSError {
             print ("Error: \(error.domain)")
         }
@@ -28,12 +31,19 @@ import WebKit
 
 @objc public class NHMarkdownView: EFMarkdownView {
   
-    @objc public func nh_load(markdown: String?, completionHandler: ((WKWebView, WKNavigation?) -> Void)?) {
+    
+    /// 加载markdown文档：如果是swift请调用：load(markdown:, options:.safe, completionHandler:）
+    ///
+    /// - Parameters:
+    ///   - markdown: markdown原文
+    ///   - completionHandler: 交互回调
+    @objc public func load(markdown: String?, completionHandler: ((WKWebView, WKNavigation?) -> Void)? = nil) {
         load(markdown: markdown, options: .safe, completionHandler: completionHandler)
     }
-    
-    
-    
+
+    @objc public override func setFontSize(percent: CGFloat, completionHandler: ((Any?, Error?) -> Void)? = nil) {
+        super .setFontSize(percent: percent, completionHandler: completionHandler)
+    }
     
 }
 

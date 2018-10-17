@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import <NHMarkdown/NHMarkdown.h>
+#import <NHMarkdown/NHMarkdown-Swift.h>
 #import "NHMarkdownDemo-Swift.h"
 #import <WebKit/WebKit.h>
 
@@ -25,22 +25,31 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    NSString *content = [self getLocalContent];
+    NSString *content = [self getNetworkContent];
     NHMarkdown *mdTool = [[NHMarkdown alloc] init];
     _markdownContent = [mdTool markdownToHTML:content].copy;
     
     
     NHMarkdownView *mdView = [[NHMarkdownView alloc] init];
-    mdView.frame = self.view.bounds;
     mdView.backgroundColor = [UIColor redColor];
-    _mdView = mdView;
+    mdView.translatesAutoresizingMaskIntoConstraints = NO;
     [self.view addSubview:mdView];
+    _mdView = mdView;
+    
+    NSLayoutConstraint *leftConstraint = [NSLayoutConstraint constraintWithItem:mdView attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeft multiplier:1 constant:0];
+    NSLayoutConstraint *rigthConstraint = [NSLayoutConstraint constraintWithItem:mdView attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeRight multiplier:1 constant:0];
+    NSLayoutConstraint *bottomConstraint = [NSLayoutConstraint constraintWithItem:mdView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeBottom multiplier:1 constant:0];
+    NSLayoutConstraint *topConstraint = [NSLayoutConstraint constraintWithItem:mdView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTop multiplier:1 constant:64];
+    [self.view addConstraints:@[leftConstraint,rigthConstraint,bottomConstraint,topConstraint]];
+    
+    
     __weak typeof(self)weakself = self;
-    [mdView nh_loadWithMarkdown:content completionHandler:^(WKWebView * _Nonnull wkWeb, WKNavigation * _Nullable wkNav) {
+    [mdView loadWithMarkdown:content completionHandler:^(WKWebView * _Nonnull wkWeb, WKNavigation * _Nullable wkNav) {
         wkWeb.UIDelegate = weakself;
         wkWeb.navigationDelegate = weakself;
     }];
 
+    
 }
 
 
