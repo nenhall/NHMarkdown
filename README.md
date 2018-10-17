@@ -4,14 +4,9 @@
 
 ## Overview
 
-sample1|sample2|sample3|  
-:---------------------:|:---------------------:|:---------------------:|
-
-![](https://github.com/nenhall/NHMarkdown/blob/master/img/preview.png)|
-
-![](https://github.com/nenhall/NHMarkdown/blob/master/img/preview.png)|
-
-![](https://github.com/nenhall/NHMarkdown/blob/master/img/edit.png)|
+sample1|sample2|sample3
+:---------------------:|:---------------------:|:---------------------:
+![](https://github.com/nenhall/NHMarkdown/blob/master/img/preview.png)|![](https://github.com/nenhall/NHMarkdown/blob/master/img/preview2.png)|![](https://github.com/nenhall/NHMarkdown/blob/master/img/edit.png)
 
 
 
