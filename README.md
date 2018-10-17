@@ -1,5 +1,5 @@
 # NHMarkdown
-一个支持oc、swift的markdown文档显示、编辑的工具
+一个支持`Objective-C`、`Swift`的markdown文档显示、编辑及转换成HTML文档的工具
 
 
 
@@ -15,7 +15,7 @@
 
 2. 预览markdown：
    <details><summary>方法展示</summary>
-   
+
    ```objective-c
    //获取网络上的内容
    NSURL *url = [NSURL URLWithString:@"https://nenhall.github.io/2018/09/22/1677ziyouxing/"];
@@ -29,22 +29,30 @@
    [self.view addSubview:mdView];
    __weak typeof(self)weakself = self;
    [mdView nh_loadWithMarkdown:content completionHandler:^(WKWebView * _Nonnull wkWeb, WKNavigation * _Nullable wkNav) {
+       // Optional: WKUIDelegate, WKNavigationDelegate
        wkWeb.UIDelegate = weakself;
        wkWeb.navigationDelegate = weakself;
    }];
    ```
-   
+
    </details>
 
 3. 编辑markdown文档：
    ```objective-c
    NSURL *url = [NSURL URLWithString:@"https://nenhall.github.io/2018/09/22/1677ziyouxing/"];
    NSString *content = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];   
-   NHMarkdown *mdTool = [[NHMarkdown alloc] init];
-//返回即是文档全部内容
-   _markdownContent = [mdTool markdownToHTML:content].copy;
+   _textView.text = content;
    ```
 
+4. 转换成HTML文档：
+
+   ```objective-c
+   NSURL *url = [NSURL URLWithString:@"https://nenhall.github.io/2018/09/22/1677ziyouxing/"];
+   NSString *content = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];   
+   NHMarkdown *mdTool = [[NHMarkdown alloc] init];
+   //返回即是文档全部内容
+   _markdownContent = [mdTool markdownToHTML:content].copy;
+   ```
 
 
 ### swift：
@@ -58,7 +66,7 @@
 
 2. 初始化markdown文档：
    <details><summary>方法展示</summary>
-   
+
    ```swift
    /** 获取网络上的内容 */
    func getNetworkContent() -> String {
@@ -82,42 +90,51 @@
        return "";
    }
    ```
-   
+
    </details>
 
 3. 解析、编辑markdown：
 
    ```swift
+   let content: String = getNetworkContent();
+   textView.text = content
+   ```
+
+4. 转换成HTML文档：
+
+   ```swift
    let content: String = NHMarkdown().markdownToHTML(getNetworkContent());
    ```
 
-4. 初始化markdown View
+5. 初始化NHMarkdown、预览
+
    <details><summary>方法展示</summary>
-   
+
    ```swift
    /** 初始化markdown View */
-   func initializeMarkdownView(content: String) -> Void {
-       let screenSize = UIScreen.main.bounds
-       markView.backgroundColor = UIColor.red
-       markView.frame = CGRect(x: 0, y: 64, width: screenSize.width, height: screenSize.height - 64)
-       markView.onRendered = {
-           [weak self] (height) in
-           if let _ = self {
-               // Optional: you can know the change of height in this block
-               print("onRendered height: \(height ?? 0)")
+       func initializeMarkdownView(content: String) -> Void {
+           let screenSize = UIScreen.main.bounds
+           markView.backgroundColor = UIColor.red
+           markView.frame = CGRect(x: 0, y: 64, width: screenSize.width, height: screenSize.height - 64)
+           markView.onRendered = {
+               [weak self] (height) in
+               if let _ = self {
+                   // Optional: you can know the change of height in this block
+                   print("onRendered height: \(height ?? 0)")
+               }
+           }
+           self.view.addSubview(markView)
+           markView.load(markdown: content, options: .default) { [weak self] (wkView: WKWebView, wkNav: WKNavigation?) in
+               // Optional: WKUIDelegate, WKNavigationDelegate
+               wkView.uiDelegate = self;
+               wkView.navigationDelegate = self;
+               // Optional: you can change font-size with a value of percent here
+               self?.markView.setFontSize(percent: 128)
+               printLog("load finish!")
            }
        }
-       self.view.addSubview(markView)
-       markView.load(markdown: content, options: .default) { [weak self] (wkView: WKWebView, wkNav: WKNavigation?) in
-           wkView.uiDelegate = self;
-           wkView.navigationDelegate = self;
-           // Optional: you can change font-size with a value of percent here
-           self?.markView.setFontSize(percent: 128)
-           printLog("load finish!")
-       }
-   }
    ```
-   
+
    </details>
 
 

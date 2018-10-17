@@ -15,14 +15,16 @@ class ViewController: UIViewController, WKUIDelegate, WKNavigationDelegate {
     @IBOutlet weak var textView: UITextView!
     public var _content: String = "";
     public var markView: NHMarkdownView = NHMarkdownView();
+    public var _htmlContent: String = "";
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let content: String = NHMarkdown().markdownToHTML(getNetworkContent());
+        
+        let content: String = getNetworkContent();
         _content = content;
-
-       initializeMarkdownView(content: content)
+        
+        _htmlContent = NHMarkdown().markdownToHTML(content);
+        initializeMarkdownView(content: content)
         
     }
     
@@ -40,6 +42,7 @@ class ViewController: UIViewController, WKUIDelegate, WKNavigationDelegate {
         }
         self.view.addSubview(markView)
         markView.load(markdown: content, options: .default) { [weak self] (wkView: WKWebView, wkNav: WKNavigation?) in
+            // Optional: WKUIDelegate, WKNavigationDelegate
             wkView.uiDelegate = self;
             wkView.navigationDelegate = self;
             // Optional: you can change font-size with a value of percent here

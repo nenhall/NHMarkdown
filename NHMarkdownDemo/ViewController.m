@@ -15,6 +15,7 @@
 @interface ViewController ()<UIWebViewDelegate,WKNavigationDelegate,WKUIDelegate>
 @property (weak, nonatomic) IBOutlet UITextView *textView;
 @property (nonatomic, copy) NSString *markdownContent;
+@property (nonatomic, copy) NSString *htmlContent;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *rightItem;
 @property (nonatomic, weak) NHMarkdownView *mdView;
 @property (nonatomic, strong) NHMarkdown *mdTool;
@@ -26,8 +27,9 @@
     [super viewDidLoad];
 
     NSString *content = [self getNetworkContent];
+    _markdownContent = content.copy;
     NHMarkdown *mdTool = [[NHMarkdown alloc] init];
-    _markdownContent = [mdTool markdownToHTML:content].copy;
+    _htmlContent = [mdTool markdownToHTML:content].copy;
     
     
     NHMarkdownView *mdView = [[NHMarkdownView alloc] init];
@@ -45,11 +47,11 @@
     
     __weak typeof(self)weakself = self;
     [mdView loadWithMarkdown:content completionHandler:^(WKWebView * _Nonnull wkWeb, WKNavigation * _Nullable wkNav) {
+        // Optional: WKUIDelegate, WKNavigationDelegate
         wkWeb.UIDelegate = weakself;
         wkWeb.navigationDelegate = weakself;
     }];
 
-    
 }
 
 
