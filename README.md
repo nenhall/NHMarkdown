@@ -12,6 +12,12 @@ sample1|sample2|sample3
 
 ## Example
 
+**首先将编译好的两个framework库拖入你的工程：**
+
+![](https://github.com/nenhall/NHMarkdown/blob/master/img/framework.png)
+
+
+
 ### OC：
 
 1. 导入头文件
