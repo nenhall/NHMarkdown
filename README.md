@@ -1,9 +1,21 @@
 # NHMarkdown
+
 一个支持`Objective-C`、`Swift`的markdown文档显示、编辑及转换成HTML文档的工具
 
+## Overview
+
+sample1|sample2|sample3|  
+:---------------------:|:---------------------:|:---------------------:|
+
+![](https://github.com/nenhall/NHMarkdown/blob/master/img/preview.png)|
+
+![](https://github.com/nenhall/NHMarkdown/blob/master/img/preview.png)|
+
+![](https://github.com/nenhall/NHMarkdown/blob/master/img/edit.png)|
 
 
-## 使用方法：
+
+## Example
 
 ### OC：
 
