@@ -20,7 +20,7 @@ class ViewController: UIViewController, WKUIDelegate, WKNavigationDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let content: String = getNetworkContent();
+        let content: String = getLocalContent();
         _content = content;
         
         _htmlContent = NHMarkdown().markdownToHTML(content);
@@ -33,6 +33,7 @@ class ViewController: UIViewController, WKUIDelegate, WKNavigationDelegate {
         let screenSize = UIScreen.main.bounds
         markView.backgroundColor = UIColor.red
         markView.frame = CGRect(x: 0, y: 64, width: screenSize.width, height: screenSize.height - 64)
+        markView.openOnSafari = true
         markView.onRendered = {
             [weak self] (height) in
             if let _ = self {
@@ -43,8 +44,9 @@ class ViewController: UIViewController, WKUIDelegate, WKNavigationDelegate {
         self.view.addSubview(markView)
         markView.load(markdown: content, options: .default) { [weak self] (wkView: WKWebView, wkNav: WKNavigation?) in
             // Optional: WKUIDelegate, WKNavigationDelegate
-            wkView.uiDelegate = self;
-            wkView.navigationDelegate = self;
+//            wkView.uiDelegate = self;
+//            wkView.navigationDelegate = self;
+            
             // Optional: you can change font-size with a value of percent here
             self?.markView.setFontSize(percent: 128)
             printLog("load finish!")
@@ -85,28 +87,33 @@ class ViewController: UIViewController, WKUIDelegate, WKNavigationDelegate {
         markView.isHidden = true
         textView.isHidden = false
     }
-    
+}
+
+extension ViewController {
     
     /** WKUIDelegate, WKNavigationDelegate  */
     /** WKUIDelegate, WKNavigationDelegate  */
-    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        print(#function)
-    }
-    
-    func webViewDidStartLoad(_ webView: UIWebView) {
-        print(#function)
-    }
-    
-    func webView(_ webView: WKWebView, didReceiveServerRedirectForProvisionalNavigation navigation: WKNavigation!) {
-        print(#function)
-    }
-    
-    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
-        print(#function)
-    }
-    
-    func webView(_ webView: WKWebView, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
-        print(#function)
-    }
+    /**
+     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+     print(#function)
+     }
+     
+     func webViewDidStartLoad(_ webView: UIWebView) {
+     print(#function)
+     }
+     
+     func webView(_ webView: WKWebView, didReceiveServerRedirectForProvisionalNavigation navigation: WKNavigation!) {
+     print(#function)
+     }
+     
+     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+     decisionHandler(.allow)
+     print(#function)
+     }
+     
+     func webView(_ webView: WKWebView, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
+     print(#function)
+     }
+     */
 }
 

@@ -26,7 +26,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    NSString *content = [self getNetworkContent];
+    NSString *content = [self getLocalContent];
     _markdownContent = content.copy;
     NHMarkdown *mdTool = [[NHMarkdown alloc] init];
     _htmlContent = [mdTool markdownToHTML:content].copy;
@@ -34,6 +34,7 @@
     
     NHMarkdownView *mdView = [[NHMarkdownView alloc] init];
     mdView.backgroundColor = [UIColor redColor];
+    mdView.openOnSafari = YES;
     mdView.translatesAutoresizingMaskIntoConstraints = NO;
     [self.view addSubview:mdView];
     _mdView = mdView;
@@ -48,8 +49,8 @@
     __weak typeof(self)weakself = self;
     [mdView loadWithMarkdown:content completionHandler:^(WKWebView * _Nonnull wkWeb, WKNavigation * _Nullable wkNav) {
         // Optional: WKUIDelegate, WKNavigationDelegate
-        wkWeb.UIDelegate = weakself;
-        wkWeb.navigationDelegate = weakself;
+//        wkWeb.UIDelegate = weakself;
+//        wkWeb.navigationDelegate = weakself;
     }];
 
 }
